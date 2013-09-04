@@ -12,26 +12,25 @@
 // }
 
 
-modules = {
-    overrides {
-        'jquery-theme' {
-            resource id:'theme',
-                    url:[dir: 'jquery-ui/css/mint-choc/',
-                            file:'jquery-ui-1.10.3.custom.min.css'],
-                    attrs:[media:'screen, projection']
-        }
-    }
-}
+// grails.resources.modules = {
+//     overrides {
+//         'jquery-theme' {
+//             resource id:'theme',
+//                     // url:[dir: 'jquery-ui/css/mint-choc/', file:'jquery-ui-1.10.3.custom.min.css'],
+//                     url: "jquery-ui/css/mint-choc/jquery-ui-1.10.3.custom.min.css",
+//                     attrs: [media: 'screen, projection']
+//         }
+//     }
+// }
 
 grails.resources.adhoc.patterns = ['/img/*','/images/*', '/css/*', '/js/*', '/plugins/*']
 grails.resources.mappers.cssrewriter.includes = ['**/*.css', '**/*.less']
 grails.resources.mappers.csspreprocessor.includes = ['**/*.css', '**/*.less']
-//grails.resources.rewrite.css = false
-
-
+grails.resources.rewrite.css = true
 grails.resources.processing.enabled = true
 grails.resources.mappers.bundle.enabled = true
 grails.resources.mappers.hashandcache.enabled = true
+
 
 grails.project.groupId = appName // change this to alter the default package name and Maven publishing destination
 grails.mime.file.extensions = true // enables the parsing of file extensions from URLs into the request format

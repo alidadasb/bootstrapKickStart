@@ -1,0 +1,32 @@
+<plugin name='closure-compiler' version='0.9.1' grailsVersion='1.3 &gt; *'>
+  <author>Øyvind Marthinsen</author>
+  <authorEmail>oyvinmar@gmail.com</authorEmail>
+  <title>Google Closure Compiler Plugin</title>
+  <description>This plugin compiles/optimizes your javascript resources with the Google Closure Compiler.
+
+It provides three compilation levels. WHITESPACE_ONLY, SIMPLE_OPTIMIZATIONS and ADVANCED_OPTIMIZATIONS.
+
+N.B. It builds/depends on the Grails Resources Plugin.
+    </description>
+  <documentation>https://github.com/oyvinmar/grails-closure-compiler/blob/master/README.md</documentation>
+  <type>ClosureCompilerGrailsPlugin</type>
+  <resources>
+    <resource>org.grails.plugin.gccresources.GoogleClosureCompilerResourceMapper</resource>
+  </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+    <repository name='http://grails.org/plugins' url='http://grails.org/plugins' />
+  </repositories>
+  <dependencies>
+    <compile>
+      <dependency group='com.google.javascript' name='closure-compiler' version='r1918' />
+    </compile>
+  </dependencies>
+  <plugins />
+  <runtimePluginRequirements>
+    <plugin name='resources' version='1.1.6 &gt; *' />
+  </runtimePluginRequirements>
+  <behavior />
+</plugin>
