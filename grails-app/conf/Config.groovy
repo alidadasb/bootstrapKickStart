@@ -23,13 +23,15 @@
 //     }
 // }
 
-grails.resources.adhoc.patterns = ['/img/*','/images/*', '/css/*', '/js/*', '/plugins/*']
-grails.resources.mappers.cssrewriter.includes = ['**/*.css', '**/*.less']
-grails.resources.mappers.csspreprocessor.includes = ['**/*.css', '**/*.less']
-grails.resources.rewrite.css = true
-grails.resources.processing.enabled = true
-grails.resources.mappers.bundle.enabled = true
-grails.resources.mappers.hashandcache.enabled = true
+// grails.resources.debug = true
+
+// grails.resources.adhoc.patterns = ['/img/*','/images/*', '/css/*', '/js/*', '/plugins/*']
+// grails.resources.mappers.cssrewriter.includes = ['**/*.css', '**/*.less']
+// grails.resources.mappers.csspreprocessor.includes = ['**/*.css', '**/*.less']
+// grails.resources.rewrite.css = true
+// grails.resources.processing.enabled = true
+// grails.resources.mappers.bundle.enabled = true
+// grails.resources.mappers.hashandcache.enabled = true
 
 
 grails.project.groupId = appName // change this to alter the default package name and Maven publishing destination

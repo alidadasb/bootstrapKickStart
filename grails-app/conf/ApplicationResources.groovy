@@ -9,8 +9,9 @@ modules = {
             resource id:'theme', url: "jquery-ui/css/mint-choc/jquery-ui-1.10.3.custom.min.css"
         }
 
-        bootstrap {
-            dependsOn 'jquery-ui'
-        }
+    //     bootstrap {
+    //         dependsOn 'jquery-ui'
+    //     }
     }
 }
+

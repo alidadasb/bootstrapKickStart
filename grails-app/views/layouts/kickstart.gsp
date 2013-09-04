@@ -23,7 +23,6 @@
     <r:require modules="bootstrap"/>
     <r:require modules="bootstrap_utils"/>
     <r:require modules="application"/>
-    
 	<r:layoutResources />
 	<g:layoutHead />
 
