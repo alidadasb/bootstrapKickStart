@@ -11,6 +11,24 @@
 //    grails.config.locations << "file:" + System.properties["${appName}.config.location"]
 // }
 
+
+modules = {
+    overrides {
+        'jquery-theme' {
+            resource id:'theme',
+                    url:[dir: 'jquery-ui/css/mint-choc/',
+                            file:'jquery-ui-1.10.3.custom.min.css'],
+                    attrs:[media:'screen, projection']
+        }
+    }
+}
+
+grails.resources.adhoc.patterns = ['/img/*','/images/*', '/css/*', '/js/*', '/plugins/*']
+grails.resources.mappers.cssrewriter.includes = ['**/*.css', '**/*.less']
+grails.resources.mappers.csspreprocessor.includes = ['**/*.css', '**/*.less']
+//grails.resources.rewrite.css = false
+
+
 grails.resources.processing.enabled = true
 grails.resources.mappers.bundle.enabled = true
 grails.resources.mappers.hashandcache.enabled = true

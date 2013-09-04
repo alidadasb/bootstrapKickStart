@@ -57,6 +57,7 @@ grails.project.dependency.resolution = {
         runtime ":cached-resources:1.0"
         compile ":cache-headers:1.1.5"
         compile ":closure-compiler:0.9.1"
+        compile ":jquery-ui:1.8.24"
 
 
         build ":tomcat:$grailsVersion"
